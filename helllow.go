@@ -4,17 +4,15 @@ import (
 	"fmt"
 )
 
-var  z int
+var z string = ` juan said,  "he is not coming" `
 
 func main() {
 	x := 43
 	y := 26
 
-	fmt.Println(x + y)
 	fmt.Println("Hellow, playground", 26, false)
 
-	foo()
-}
-func foo() {
-	         fmt.Println( "it's zero", z)
+	s := fmt.Sprintln(x + y)
+	fmt.Println(s)
+
 }
